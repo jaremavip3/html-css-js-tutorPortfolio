@@ -7,3 +7,42 @@ html {
 body {
   font-family: "Poppins", sans-serif;
 }
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+.navigation-name {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.navigation-container {
+}
+.navigation-container-menu {
+  display: flex;
+  flex-direction: column;
+  height: 35px;
+
+  justify-content: space-between; /* Distribute space evenly */
+
+  cursor: pointer;
+}
+.navigation-container-menu div {
+  background-color: #212427;
+  width: 45px;
+  height: 5px;
+  border-radius: 5px;
+}
+
+.navigation-container-list {
+  list-style: none;
+  display: none;
+  gap: 2rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.navigation-container-list li {
+  cursor: pointer;
+}

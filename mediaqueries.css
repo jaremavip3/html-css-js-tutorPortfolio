@@ -1,1 +1,24 @@
 /* Media querries fro targeting different sizes of screen */
+
+/* 1. Mobile phones */
+@media only screen and (max-width: 600px) {
+  .navigation-name {
+    font-size: 1.5rem;
+  }
+}
+
+/* 2. Tablets */
+@media only screen and (min-width: 600px) {
+  .navigation-container-menu {
+  }
+}
+
+/* 3. Desktops */
+@media only screen and (min-width: 1200px) {
+  .navigation-container-list {
+    display: flex;
+  }
+  .navigation-container-menu {
+    display: none;
+  }
+}
