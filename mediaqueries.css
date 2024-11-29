@@ -27,10 +27,15 @@
 
 /* 3. Desktops */
 @media only screen and (min-width: 1200px) {
+  /* Make the list horizontal instead of vertical */
   .navigation-container-list {
     display: flex;
     flex-direction: row;
+    /* removing padding for proper desktop nav bar aligment */
+    padding: 0;
   }
+  /* resetting some settings for desktop nav bar animation */
+  /* I tried to make it responsive without new DIV and for this I need to reset some properties */
   .navigation-container-list-container {
     position: static;
     top: auto;
@@ -39,6 +44,7 @@
     height: auto;
     opacity: 1;
   }
+  /* Not to show X button */
   .navigation-container-menu {
     display: none;
   }
