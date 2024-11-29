@@ -5,11 +5,23 @@
   .navigation-name {
     font-size: 1.5rem;
   }
+  .navigation-container-menu div {
+    width: 30px;
+    height: 2px;
+  }
+  .navigation-container-menu {
+    height: 24px;
+    z-index: 5;
+  }
 }
 
 /* 2. Tablets */
 @media only screen and (min-width: 600px) {
-  .navigation-container-menu {
+  .navigation-container-menu-toggle div:nth-child(1) {
+    transform: translateY(17px) rotate(45deg);
+  }
+  navigation-container-menu-toggle div:nth-child(3) {
+    transform: translateY(17px) rotate(45deg);
   }
 }
 
@@ -17,8 +29,20 @@
 @media only screen and (min-width: 1200px) {
   .navigation-container-list {
     display: flex;
+    flex-direction: row;
+  }
+  .navigation-container-list-container {
+    position: static;
+    top: auto;
+    left: auto;
+    width: auto;
+    height: auto;
+    opacity: 1;
   }
   .navigation-container-menu {
     display: none;
+  }
+  .navigation-container-list {
+    font-size: 1.5rem;
   }
 }

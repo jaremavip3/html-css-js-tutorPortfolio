@@ -23,26 +23,91 @@ body {
 .navigation-container-menu {
   display: flex;
   flex-direction: column;
-  height: 35px;
-
+  height: 32px;
   justify-content: space-between; /* Distribute space evenly */
-
   cursor: pointer;
 }
+
 .navigation-container-menu div {
   background-color: #212427;
-  width: 45px;
-  height: 5px;
+  width: 40px;
+  height: 4px;
   border-radius: 5px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.navigation-container-menu div:nth-child(1) {
+  transform: translateY(0) rotate(0);
+}
+.navigation-container-menu div:nth-child(2) {
+  opacity: 1;
+}
+.navigation-container-menu div:nth-child(3) {
+  transform: translateY(0) rotate(0);
+}
+.navigation-container-menu-toggle div:nth-child(1) {
+  /* Move down and rotate to create top of X */
+  transform: translateY(11px) rotate(45deg);
+}
+.navigation-container-menu-toggle div:nth-child(2) {
+  /* Fade out middle line */
+  opacity: 0;
+}
+.navigation-container-menu-toggle div:nth-child(3) {
+  /* Move up and rotate to create bottom of X */
+  transform: translateY(-11px) rotate(-45deg);
 }
 
+.navigation-container-list-container {
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.45s ease;
+  position: fixed; /* This makes it cover the whole screen */
+  top: 17vh;
+  height: calc(100vh - 17vh);
+  left: 0;
+  width: 0;
+}
+.navigation-container-list-container-toggle {
+  opacity: 1;
+  width: 100%;
+}
 .navigation-container-list {
+  display: flex;
+
+  flex-direction: column;
+  padding: 0;
   list-style: none;
-  display: none;
-  gap: 2rem;
-  font-size: 1.5rem;
+  justify-content: space-between;
+  padding-bottom: 5vh;
+  height: 100%;
+  font-size: 3rem;
   font-weight: 400;
 }
+
 .navigation-container-list li {
   cursor: pointer;
+  align-self: center;
+  justify-self: center;
+  position: relative;
+  padding: 10px 30px;
+  color: #212427;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  /* Remove the background and just use text effects */
+  background: none;
+}
+
+/* Remove the ::before pseudo-element since we won't need it */
+.navigation-container-list li::before {
+  display: none;
+}
+
+/* The hover effect with improved glass-like blur */
+.navigation-container-list li:hover {
+  color: rgba(23, 25, 27, 0.95); /* Made text more opaque for clarity */
+  transform: scale(1.2);
+  /* Reduced shadow layers for a cleaner look */
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.4), 0 0 2px rgba(0, 0, 0, 0.2);
+  /* Minimized blur while maintaining the depth effect */
+  filter: blur(0.1px) drop-shadow(0 0 1px rgba(0, 0, 0, 0.3));
 }
