@@ -16,18 +16,18 @@ body {
   align-items: center;
   height: 17vh;
 }
-.navigation-name {
+.navigation_name {
   font-size: 2rem;
   font-weight: 500;
 }
-.navigation-container-menu {
+.navigation_container_menu {
   display: flex;
   flex-direction: column;
   height: 32px;
   justify-content: space-between; /* Distribute space evenly */
   cursor: pointer;
 }
-.navigation-container-menu div {
+.navigation_container_menu div {
   background-color: #212427;
   width: 40px;
   height: 4px;
@@ -38,24 +38,24 @@ body {
 
 /* ---------------start------------------ */
 /* Menu button closing/opening animation */
-.navigation-container-menu div:nth-child(1) {
+.navigation_container_menu div:nth-child(1) {
   transform: translateY(0) rotate(0);
 }
-.navigation-container-menu div:nth-child(2) {
+.navigation_container_menu div:nth-child(2) {
   opacity: 1;
 }
-.navigation-container-menu div:nth-child(3) {
+.navigation_container_menu div:nth-child(3) {
   transform: translateY(0) rotate(0);
 }
-.navigation-container-menu-toggle div:nth-child(1) {
+.navigation_container_menu_toggle div:nth-child(1) {
   /* extent for proper lenght distribution and rotate upper line */
   transform: translateY(11px) rotate(45deg);
 }
-.navigation-container-menu-toggle div:nth-child(2) {
+.navigation_container_menu_toggle div:nth-child(2) {
   /* Removing middle line */
   opacity: 0;
 }
-.navigation-container-menu-toggle div:nth-child(3) {
+.navigation_container_menu_toggle div:nth-child(3) {
   /* extent for proper lenght distribution and rotate bottom line */
   transform: translateY(-11px) rotate(-45deg);
 }
@@ -63,7 +63,7 @@ body {
 
 /* ---------------start---------------------------------------- */
 /* Sliding menu aimation and Mobile/Desktop initial positioning */
-.navigation-container-list-container {
+.navigation_container_list_container {
   display: flex;
   justify-content: center;
   opacity: 0;
@@ -74,13 +74,12 @@ body {
   left: 0;
   width: 0;
 }
-.navigation-container-list-container-toggle {
+.navigation_container_list_container_toggle {
   opacity: 1;
   width: 100%;
 }
-.navigation-container-list {
+.navigation_container_list {
   display: flex;
-
   flex-direction: column;
   padding: 0;
   list-style: none;
@@ -89,9 +88,10 @@ body {
   height: 100%;
   font-size: 3rem;
   font-weight: 400;
+  background-color: white;
 }
 
-.navigation-container-list li {
+.navigation_container_list li {
   cursor: pointer;
   align-self: center;
   justify-self: center;
@@ -101,7 +101,7 @@ body {
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   /* Remove the background and just use text effects */
 }
-.navigation-container-list li:hover {
+.navigation_container_list li:hover {
   color: rgba(23, 25, 27, 0.95);
   transform: scale(1.2);
   /* making blured text backgroud */
@@ -109,3 +109,84 @@ body {
   filter: blur(0.1px) drop-shadow(0 0 1px rgba(0, 0, 0, 0.3));
 }
 /* _______________end__________________________________________ */
+
+/* ---------------start---------------------------------------- */
+/* Hero sections styles */
+.section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+  height: 80vh;
+}
+.hero_imgContainer {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  height: 400px;
+  margin: auto 0;
+}
+.hero_description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.hero_description_buttons,
+.hero_description_links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.hero_description p {
+  font-weight: 600;
+}
+.hero_description_congrat {
+  font-size: 1rem;
+  color: #555555;
+}
+.hero_description_name {
+  font-size: 3rem;
+}
+.hero_description_title {
+  font-size: 1.75rem;
+  color: #555555;
+  margin-bottom: 1rem;
+  text-align: center;
+  white-space: nowrap;
+}
+.hero_description_links img {
+  cursor: pointer;
+  height: 2rem;
+}
+/* ____Buttons Styling_________ */
+.hero_description_buttons_dowload,
+.hero_description_buttons_info {
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  background: none;
+}
+.hero_description_buttons_dowload:hover,
+.hero_description_buttons_info:hover {
+  cursor: pointer;
+  background: rgb(0, 0, 0);
+}
+.hero_description_buttons_dowload:hover,
+.hero_description_buttons_info {
+  background-color: rgb(53, 53, 53);
+  color: white;
+}

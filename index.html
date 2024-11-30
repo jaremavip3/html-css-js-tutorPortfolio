@@ -10,18 +10,18 @@
   </head>
   <body>
     <script src="script.js"></script>
+
+    <!------ NAVIGATION Section ------>
     <nav class="navigation">
-      <div class="navigation-name">Michael's English Lab</div>
-
-      <div class="navigation-container">
-        <div onclick="toggleMobileMenu()" class="navigation-container-menu">
-          <div class="navigation-container-menu-line1"></div>
-          <div class="navigation-container-menu-line2"></div>
-          <div class="navigation-container-menu-line3"></div>
+      <div class="navigation_name">Michael's English Lab</div>
+      <div class="navigation_container">
+        <div onclick="toggleMobileMenu()" class="navigation_container_menu">
+          <div class="navigation_container_menu_line1"></div>
+          <div class="navigation_container_menu_line2"></div>
+          <div class="navigation_container_menu_line3"></div>
         </div>
-
-        <div class="navigation-container-list-container">
-          <ul class="navigation-container-list">
+        <div class="navigation_container_list_container">
+          <ul class="navigation_container_list">
             <li href="#">Home</li>
             <li href="#">About</li>
             <li href="#">Skills</li>
@@ -31,5 +31,44 @@
         </div>
       </div>
     </nav>
+    <!------ HERO Section ------>
+    <div class="section hero">
+      <div class="hero_imgContainer">
+        <img src="assets/profile-pic.png" alt="author image" class="hero_img" />
+      </div>
+      <div class="hero_description">
+        <p class="hero_description_congrat">Hello, I'm</p>
+        <h1 class="hero_description_name">Michael</h1>
+        <p class="hero_description_title">English Teacher</p>
+        <div class="hero_description_buttons">
+          <button
+            class="hero_description_buttons_dowload"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Dowload CV
+          </button>
+          <button
+            class="hero_description_buttons_info"
+            onclick="location.href = './#contact'"
+          >
+            Contact Info
+          </button>
+        </div>
+        <div class="hero_description_links">
+          <img
+            src="./assets/github.png"
+            alt="github logo"
+            class="hero_description_links_imgGithub"
+            onclick="location.href= 'https://github.com/' "
+          />
+          <img
+            src="./assets/linkedin.png"
+            alt="linkedIn logo"
+            class="hero_description_links_imgLinkedIn"
+            onclick="location.href= 'https://www.linkedin.com/' "
+          />
+        </div>
+      </div>
+    </div>
   </body>
 </html>

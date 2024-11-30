@@ -1,34 +1,68 @@
 /* Media querries fro targeting different sizes of screen */
 
 /* 1. Mobile phones */
-@media only screen and (max-width: 600px) {
-  .navigation-name {
+@media only screen and (max-width: 599px) {
+  .navigation_name {
     font-size: 1.5rem;
   }
-  .navigation-container-menu div {
+  .navigation_container_menu div {
     width: 30px;
     height: 2px;
   }
-  .navigation-container-menu {
+  .navigation_container_menu {
     height: 24px;
     z-index: 5;
+  }
+  .navigation_container_list {
+    width: 100%;
+  }
+  .hero {
+    gap: 0;
+    display: block;
+  }
+  .hero_imgContainer {
+    width: auto;
+    height: 46vw;
+    margin: 0;
+  }
+  .hero_img {
+    max-width: none;
+  }
+  .hero_description_name {
+    font-size: 2rem;
+  }
+  .hero_description_title {
+    font-size: 1.25rem;
   }
 }
 
 /* 2. Tablets */
-@media only screen and (min-width: 600px) {
-  .navigation-container-menu-toggle div:nth-child(1) {
-    transform: translateY(17px) rotate(45deg);
+@media only screen and (min-width: 600px) and (max-width: 1199px) {
+  .navigation_container_menu_toggle div:nth-child(1) {
+    transform: translateY(14px) rotate(45deg);
   }
-  navigation-container-menu-toggle div:nth-child(3) {
-    transform: translateY(17px) rotate(45deg);
+  .navigation_container_menu_toggle div:nth-child(3) {
+    transform: translateY(-14px) rotate(-45deg);
+  }
+  .navigation_container_list {
+    width: 100%;
+  }
+  .hero {
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+  }
+  .hero_imgContainer {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
   }
 }
 
 /* 3. Desktops */
 @media only screen and (min-width: 1200px) {
   /* Make the list horizontal instead of vertical */
-  .navigation-container-list {
+  .navigation_container_list {
     display: flex;
     flex-direction: row;
     /* removing padding for proper desktop nav bar aligment */
@@ -36,7 +70,7 @@
   }
   /* resetting some settings for desktop nav bar animation */
   /* I tried to make it responsive without new DIV and for this I need to reset some properties */
-  .navigation-container-list-container {
+  .navigation_container_list_container {
     position: static;
     top: auto;
     left: auto;
@@ -45,10 +79,10 @@
     opacity: 1;
   }
   /* Not to show X button */
-  .navigation-container-menu {
+  .navigation_container_menu {
     display: none;
   }
-  .navigation-container-list {
+  .navigation_container_list {
     font-size: 1.5rem;
   }
 }
