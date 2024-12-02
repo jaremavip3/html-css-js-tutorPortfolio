@@ -126,7 +126,7 @@ body {
 .section {
   padding-top: 4vh;
   height: 96vh;
-
+  display: block;
   margin: 0 5%;
   box-sizing: border-box;
   min-height: fit-content;
@@ -145,10 +145,6 @@ body {
 .hero_imgContainer {
   display: flex;
   justify-content: center;
-  /* width: 400px;
-  height: 400px;
-  margin: auto 0; */
-
   width: auto;
   height: 46vw;
   margin: 0;
@@ -219,3 +215,160 @@ body {
   background-color: rgb(53, 53, 53);
   color: white;
 }
+/* _______________end__________________________________________ */
+
+/* ---------------start---------------------------------------- */
+/* About sections styles */
+
+.about_introduction {
+  text-align: center;
+  color: #555555;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.about_title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.about_container_imgContainer {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: 46vw;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+.about_container_imgContainer_img {
+  border-radius: 2rem;
+}
+.about_container_details_cards {
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.about_container_details_cards_experince,
+.about_container_details_cards_education {
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  padding: 1.5rem;
+  text-wrap: pretty;
+  text-align: center;
+  flex: 1;
+}
+.about_container_details_cards_experince_logo_img,
+.about_container_details_cards_education_logo_img {
+  width: 2rem;
+  margin: auto;
+}
+.about p {
+  color: #555555;
+  text-wrap: pretty;
+}
+/* _______________end__________________________________________ */
+
+/* ---------------start---------------------------------------- */
+/* Experience sections styles */
+.experience {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.experience_introduction {
+  color: #555555;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.experience_title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.experience_cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.experience_cards_articles {
+  display: flex;
+}
+.experience_cards h2 {
+  font-size: 1.25rem;
+  color: #555555;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.experience_cards p {
+  color: #555555;
+  text-wrap: pretty;
+}
+.experience_cards_one,
+.experience_cards_two {
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  padding: 1.5rem;
+  flex: 1;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.experience_cards_one_articles,
+.experience_cards_two_articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2.5rem;
+}
+.experience_cards_article {
+  width: 11rem;
+  display: flex;
+  gap: 1rem;
+}
+.experience_cards img {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* _______________end__________________________________________ */
+
+/* ---------------start---------------------------------------- */
+/* Prices sections styles */
+.prices_introduction {
+  color: #555555;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.prices_title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.prices_container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.prices_container_imgHolder {
+  display: flex;
+  justify-content: space-around;
+}
+.prices_container_article {
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  padding: 1rem;
+  max-width: 30rem;
+}
+.prices_container img {
+  border-radius: 1.5rem;
+}
+
+/* _______________end__________________________________________ */

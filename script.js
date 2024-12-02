@@ -23,3 +23,9 @@ function initiateToggleMobileMenu(menu, list) {
     }
   };
 }
+
+function handleClickOnMenuSection(clickedSection) {
+  const goToSection = clickedSection.getAttribute("href");
+  closure();
+  location.href = goToSection;
+}

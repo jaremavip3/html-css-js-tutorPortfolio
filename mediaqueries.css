@@ -1,40 +1,5 @@
 /* Media querries fro targeting different sizes of screen */
 
-@media screen and (min-width: 600px) {
-  /* .navigation_name {
-    font-size: 1.5rem;
-  }
-  .navigation_container_menu div {
-    width: 30px;
-    height: 2px;
-  }
-  .navigation_container_menu {
-    height: 24px;
-    z-index: 5;
-  }
-  .navigation_container_list {
-    width: 100%;
-  }
-  .hero {
-    gap: 0;
-    display: block;
-  }
-  .hero_imgContainer {
-    width: auto;
-    height: 46vw;
-    margin: 0;
-  }
-  .hero_img {
-    max-width: none;
-  }
-  .hero_description_name {
-    font-size: 2rem;
-  }
-  .hero_description_title {
-    font-size: 1.25rem;
-  } */
-}
-
 /* 1. Tablet styles (600px and more) */
 @media screen and (min-width: 600px) {
   .navigation_container_menu {
@@ -58,7 +23,8 @@
     gap: 0;
     padding: 0;
   }
-  .hero_imgContainer {
+  .hero_imgContainer,
+  .about_container_imgContainer {
     width: 275px;
     height: 275px;
     margin: 0 auto 2rem;
@@ -69,9 +35,12 @@
   .hero_description_title {
     font-size: 1.75rem;
   }
+  .about_title {
+    font-size: 3rem;
+  }
 }
 
-/* 3. Desktops */
+/* 1. Desktop styles (1200px and more) */
 @media screen and (min-width: 1200px) {
   .section {
     margin: 0 10rem;
@@ -109,12 +78,14 @@
     flex-direction: row;
     gap: 5rem;
   }
-  .hero_imgContainer {
+  .hero_imgContainer,
+  .about_container_imgContainer {
     width: 400px;
     height: 400px;
     margin: auto 0;
   }
-  .hero_img {
+  .hero_img,
+  .about_container_imgContainer_img {
     max-width: 100%;
   }
 }

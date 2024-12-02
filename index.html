@@ -22,23 +22,31 @@
         </div>
         <div class="navigation_container_list_container">
           <ul class="navigation_container_list">
-            <li href="#">Home</li>
-            <li href="#">About</li>
-            <li href="#">Skills</li>
-            <li href="#">Prices</li>
-            <li href="#">Contact</li>
+            <li onclick="handleClickOnMenuSection(this)" href="#hero">Home</li>
+            <li onclick="handleClickOnMenuSection(this)" href="#about">
+              About
+            </li>
+            <li onclick="handleClickOnMenuSection(this)" href="#skills">
+              Skills
+            </li>
+            <li onclick="handleClickOnMenuSection(this)" href="#prices">
+              Prices
+            </li>
+            <li onclick="handleClickOnMenuSection(this)" href="#contact">
+              Contact
+            </li>
           </ul>
         </div>
       </div>
     </nav>
     <!------ HERO Section ------>
-    <div class="section hero">
+    <section class="section hero" id="hero">
       <div class="hero_imgContainer">
         <img src="assets/profile-pic.png" alt="author image" class="hero_img" />
       </div>
       <div class="hero_description">
         <p class="hero_description_congrat">Hello, I'm</p>
-        <h1 class="hero_description_name">Michael</h1>
+        <h2 class="hero_description_name">Michael</h2>
         <p class="hero_description_title">English Teacher</p>
         <div class="hero_description_buttons">
           <button
@@ -69,6 +77,227 @@
           />
         </div>
       </div>
-    </div>
+    </section>
+    <!------ ABOUT Section ------>
+    <section class="section about" id="about">
+      <p class="about_introduction">Get To Know Me</p>
+      <h2 class="about_title">About Me</h2>
+      <div class="about_container">
+        <div class="about_container_imgContainer">
+          <img
+            src="assets/about-pic.png"
+            alt="about image"
+            class="about_container_imgContainer_img"
+          />
+        </div>
+
+        <div class="about_container_details">
+          <div class="about_container_details_cards">
+            <div class="about_container_details_cards_experince">
+              <div class="about_container_details_cards_experince_logo">
+                <img
+                  src="assets/experience.png"
+                  alt="experience logo"
+                  class="about_container_details_cards_experince_logo_img"
+                />
+              </div>
+              <h3>Experience</h3>
+              <p>Over 17 years of teaching experience</p>
+            </div>
+            <div class="about_container_details_cards_education">
+              <div class="about_container_details_cards_education_logo">
+                <img
+                  src="assets/education.png"
+                  alt="education logo"
+                  class="about_container_details_cards_education_logo_img"
+                />
+              </div>
+              <h3>Education</h3>
+              <p>B.A., English, Psychology, Fine Arts</p>
+            </div>
+          </div>
+          <p class="about_container_details_text">
+            Whatever the situation, I will help you to achieve your goals.
+            Having an academic background in languages and international
+            studies, I can empathize with you and help you find the most
+            effective course of study. I am approachable, personable, and have a
+            strong commitment to excellence.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!------ Experience Section ------>
+    <section id="skills" class="section experience">
+      <p class="experience_introduction">Explore My</p>
+      <h2 class="experience_title">Skills</h2>
+      <div class="experience_cards">
+        <!------ CARD 1 ------>
+        <div class="experience_cards_one">
+          <h2>Exams Prepatation</h2>
+          <div class="experience_cards_one_articles">
+            <article class="experience_cards_article">
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="experience_cards_one_icon"
+              />
+              <div>
+                <h3>IELTS</h3>
+                <p></p>
+              </div>
+            </article>
+            <article class="experience_cards_article">
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="experience_cards_one_icon"
+              />
+              <div>
+                <h3>TOEFL</h3>
+                <p></p>
+              </div>
+            </article>
+            <article class="experience_cards_article">
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="experience_cards_one_icon"
+              />
+              <div>
+                <h3>Cambridge Exam</h3>
+                <p></p>
+              </div>
+            </article>
+            <article class="experience_cards_article">
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="experience_cards_one_icon"
+              />
+              <div>
+                <h3>Business English</h3>
+                <p></p>
+              </div>
+            </article>
+            <article class="experience_cards_article">
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="experience_cards_one_icon"
+              />
+              <div>
+                <h3>Academic Writing</h3>
+                <p></p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <!------ CARD 2 ------>
+        <div class="experience_cards_two">
+          <h2>General English</h2>
+          <div class="experience_cards_one_articles">
+            <article class="experience_cards_article">
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="experience_cards_one_icon"
+              />
+              <div>
+                <h3>Conversational</h3>
+                <p>Fluency</p>
+              </div>
+            </article>
+            <article class="experience_cards_article">
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="experience_cards_one_icon"
+              />
+              <div>
+                <h3>Grammar</h3>
+                <p>Fundamentals</p>
+              </div>
+            </article>
+            <article class="experience_cards_article">
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="experience_cards_one_icon"
+              />
+              <div>
+                <h3>Vocabulary</h3>
+                <p>Development</p>
+              </div>
+            </article>
+            <article class="experience_cards_article">
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="experience_cards_one_icon"
+              />
+              <div>
+                <h3>Pronunciation</h3>
+                <p>Mastery</p>
+              </div>
+            </article>
+            <article class="experience_cards_article">
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="experience_cards_one_icon"
+              />
+              <div>
+                <h3>Listening</h3>
+                <p>Comprehension</p>
+              </div>
+            </article>
+            <article class="experience_cards_article">
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="experience_cards_one_icon"
+              />
+              <div>
+                <h3>Reading</h3>
+                <p>Analysis</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------ Prices Section ------>
+    <section id="prices" class="section prices">
+      <p class="prices_introduction">Explore My</p>
+      <h2 class="prices_title">Prices</h2>
+      <div class="prices_container">
+        <article class="prices_container_article">
+          <div class="prices_container_imgHolder">
+            <img src="./assets/project-1.png" alt="price icon" class="" />
+          </div>
+        </article>
+        <article class="prices_container_article">
+          <div class="prices_container_imgHolder">
+            <img src="./assets/project-1.png" alt="price icon" class="" />
+          </div>
+        </article>
+        <article class="prices_container_article">
+          <div class="prices_container_imgHolder">
+            <img src="./assets/project-1.png" alt="price icon" class="" />
+          </div>
+        </article>
+        <article class="prices_container_article">
+          <div class="prices_container_imgHolder">
+            <img src="./assets/project-1.png" alt="price icon" class="" />
+          </div>
+        </article>
+        <article class="prices_container_article">
+          <div class="prices_container_imgHolder">
+            <img src="./assets/project-1.png" alt="price icon" class="" />
+          </div>
+        </article>
+      </div>
+    </section>
   </body>
 </html>
