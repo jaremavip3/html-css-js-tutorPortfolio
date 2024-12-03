@@ -272,31 +272,32 @@
       <p class="prices_introduction">Explore My</p>
       <h2 class="prices_title">Prices</h2>
       <div class="prices_container">
+        <!-- ARTICLE1 -->
         <article class="prices_container_article">
           <div class="prices_container_imgHolder">
-            <div class="prices_container_content">
+            <div class="prices_container_content" id="card1">
               <h4 class="content_title">Course Details</h4>
               <div class="content_details">
                 <div class="detail_row">
                   <span class="detail_label">Length:</span>
-                  <span class="detail_value">90 minutes</span>
+                  <span class="detail_value">60 minutes</span>
                 </div>
                 <div class="detail_row">
                   <span class="detail_label">Per Lesson:</span>
-                  <span class="detail_value">$50</span>
+                  <span class="detail_value">$35</span>
                 </div>
                 <div class="detail_row">
                   <span class="detail_label">Package*:</span>
-                  <span class="detail_value">$400</span>
+                  <span class="detail_value">$300</span>
                 </div>
-                <div class="detail_row curriculum">
-                  <span class="detail_label">Curriculum:</span>
-                  <span class="detail_value1"> • Vocabulary Improvement </span>
-                  <span class="detail_value2"
+                <div class="detail_row detail_row_curriculum">
+                  <span class="">Curriculum:</span>
+                  <span class="detail_value"> • Accuracy Enhancement </span>
+                  <span class="detail_value"
                     >• Listening Skills Enhancement</span
                   >
-                  <span class="detail_value2"
-                    >• Case Studies in Relevant Areas</span
+                  <span class="detail_value"
+                    >• Imrovement of Listening Skills</span
                   >
                 </div>
               </div>
@@ -311,7 +312,7 @@
           <h3>General English</h3>
           <div class="prices_container_article_buttonHolder">
             <button
-              onclick="handleClickOnCard()"
+              onclick="handleClickOnCard(this, 'card1')"
               class="prices_container_article_buttonHolder_button"
             >
               Price
@@ -321,19 +322,68 @@
             </button>
           </div>
         </article>
+        <!-- ARTICLE2 -->
         <article class="prices_container_article">
           <div class="prices_container_imgHolder">
+            <div class="prices_container_content" id="card2">
+              <h4 class="content_title">Course Details</h4>
+              <div class="content_details">
+                <div class="detail_row">
+                  <span class="detail_label">Length:</span>
+                  <span class="detail_value">60-70 minutes</span>
+                </div>
+                <div class="detail_row">
+                  <span class="detail_label">Per Lesson:</span>
+                  <span class="detail_value">$30</span>
+                </div>
+                <div class="detail_row">
+                  <span class="detail_label">Package*:</span>
+                  <span class="detail_value">$250</span>
+                </div>
+                <div class="detail_row detail_row_curriculum">
+                  <span class="">Curriculum:</span>
+                  <span class="detail_value"> • Fun Discussion </span>
+                  <span class="detail_value">• Topics of Your Interest</span>
+                  <span class="detail_value">• Error Analysis & Feedback</span>
+                </div>
+              </div>
+            </div>
             <img
               src="./assets/prices_conversational_eng.png"
               alt="price icon"
               class=""
             />
+            <div class="prices_container_content" id="card2">
+              <h4 class="content_title">Course Details</h4>
+              <div class="content_details">
+                <div class="detail_row">
+                  <span class="detail_label">Length:</span>
+                  <span class="detail_value">60 minutes</span>
+                </div>
+                <div class="detail_row">
+                  <span class="detail_label">Per Lesson:</span>
+                  <span class="detail_value">$35</span>
+                </div>
+                <div class="detail_row">
+                  <span class="detail_label">Package*:</span>
+                  <span class="detail_value">$300</span>
+                </div>
+                <div class="detail_row detail_row_curriculum">
+                  <span class="">Curriculum:</span>
+                  <span class="detail_value"> • Vocabulary Improvement </span>
+                  <span class="detail_value">• Accuracy Enhancement</span>
+                  <span class="detail_value"
+                    >• Imrovement of Listening Skills</span
+                  >
+                </div>
+              </div>
+            </div>
           </div>
 
           <h3>Conversational English</h3>
           <div class="prices_container_article_buttonHolder">
             <button
-              onclick="handleClickOnCard(this)"
+              onclick="handleClickOnCard(this, 'card2')"
               class="prices_container_article_buttonHolder_button"
             >
               Price
@@ -343,13 +393,41 @@
             </button>
           </div>
         </article>
+        <!-- ARTICLE3 -->
         <article class="prices_container_article">
           <div class="prices_container_imgHolder">
+            <div class="prices_container_content" id="card3">
+              <h4 class="content_title">Course Details</h4>
+              <div class="content_details">
+                <div class="detail_row">
+                  <span class="detail_label">Length:</span>
+                  <span class="detail_value">75 minutes</span>
+                </div>
+                <div class="detail_row">
+                  <span class="detail_label">Per Lesson:</span>
+                  <span class="detail_value">$40</span>
+                </div>
+                <div class="detail_row">
+                  <span class="detail_label">Package*:</span>
+                  <span class="detail_value">$350</span>
+                </div>
+                <div class="detail_row detail_row_curriculum">
+                  <span class="">Curriculum:</span>
+                  <span class="detail_value">
+                    Thorough preparation to assist you as you study for the
+                    IELTS or Celpip exams.</span
+                  >
+                </div>
+              </div>
+            </div>
             <img src="./assets/prices_exams.png" alt="price icon" class="" />
           </div>
           <h3>Exam Preparation</h3>
           <div class="prices_container_article_buttonHolder">
-            <button class="prices_container_article_buttonHolder_button">
+            <button
+              onclick="handleClickOnCard(this, 'card3')"
+              class="prices_container_article_buttonHolder_button"
+            >
               Price
             </button>
             <button class="prices_container_article_buttonHolder_button">
@@ -357,8 +435,34 @@
             </button>
           </div>
         </article>
+        <!-- ARTICLE4 -->
         <article class="prices_container_article">
           <div class="prices_container_imgHolder">
+            <div class="prices_container_content" id="card4">
+              <h4 class="content_title">Course Details</h4>
+              <div class="content_details">
+                <div class="detail_row">
+                  <span class="detail_label">Length:</span>
+                  <span class="detail_value">90 min</span>
+                </div>
+                <div class="detail_row">
+                  <span class="detail_label">Per Lesson:</span>
+                  <span class="detail_value">$50</span>
+                </div>
+                <div class="detail_row">
+                  <span class="detail_label">Package:</span>
+                  <span class="detail_value">$400</span>
+                </div>
+                <div class="detail_row detail_row_curriculum">
+                  <span class="">Curriculum:</span>
+                  <span class="detail_value">• Vocabulary Improvement </span>
+                  <span class="detail_value">• Accuracy Improvement</span>
+                  <span class="detail_value"
+                    >• Listening skills Improvement</span
+                  >
+                </div>
+              </div>
+            </div>
             <img
               src="./assets/prices_business_eng.png"
               alt="price icon"
@@ -367,7 +471,10 @@
           </div>
           <h3>Business English</h3>
           <div class="prices_container_article_buttonHolder">
-            <button class="prices_container_article_buttonHolder_button">
+            <button
+              onclick="handleClickOnCard(this, 'card4')"
+              class="prices_container_article_buttonHolder_button"
+            >
               Price
             </button>
             <button class="prices_container_article_buttonHolder_button">
@@ -375,8 +482,38 @@
             </button>
           </div>
         </article>
+        <!-- ARTICLE5 -->
         <article class="prices_container_article">
           <div class="prices_container_imgHolder">
+            <div class="prices_container_content" id="card5">
+              <h4 class="content_title">Course Details</h4>
+              <div class="content_details">
+                <div class="detail_row">
+                  <span class="detail_label">Length:</span>
+                  <span class="detail_value"
+                    >Depends on the number of pages</span
+                  >
+                </div>
+                <div class="detail_row">
+                  <span class="detail_label">Cost:</span>
+                  <span class="detail_value">$3 / page</span>
+                </div>
+                <div class="detail_row">
+                  <span class="detail_label">Package:</span>
+                  <span class="detail_value">N/A</span>
+                </div>
+                <div class="detail_row detail_row_curriculum">
+                  <span class="">Curriculum:</span>
+                  <span class="detail_value">
+                    • Thorough proofreading and editing
+                  </span>
+                  <span class="detail_value"
+                    >• Content assessment and advice</span
+                  >
+                </div>
+              </div>
+            </div>
+
             <img
               src="./assets/prices_research_papers.png"
               alt="price icon"
@@ -385,7 +522,10 @@
           </div>
           <h3>Editing Research Papers</h3>
           <div class="prices_container_article_buttonHolder">
-            <button class="prices_container_article_buttonHolder_button">
+            <button
+              onclick="handleClickOnCard(this, 'card5')"
+              class="prices_container_article_buttonHolder_button"
+            >
               Price
             </button>
             <button class="prices_container_article_buttonHolder_button">
