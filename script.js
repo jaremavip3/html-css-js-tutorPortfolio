@@ -29,3 +29,23 @@ function handleClickOnMenuSection(clickedSection) {
   closure();
   location.href = goToSection;
 }
+
+function handleClickOnCard(buttonElement) {
+  arg_text1 = "Price";
+  arg_text2 = "Close";
+  const card = document.querySelector(".prices_container_content");
+  const button = document.querySelector(
+    ".prices_container_article_buttonHolder_button"
+  );
+  button.innerText == arg_text1
+    ? card.classList.add("prices_container_content_onClick")
+    : card.classList.remove("prices_container_content_onClick");
+
+  changeButtonText(button, arg_text1, arg_text2);
+  console.log(button.innerText);
+}
+function changeButtonText(element, text1, text2) {
+  element.innerText == text1
+    ? (element.innerText = text2)
+    : (element.innerText = text1);
+}

@@ -38,6 +38,12 @@
   .about_title {
     font-size: 3rem;
   }
+  .prices_container h3 {
+    font-size: 1.25rem;
+  }
+  .prices_container_article {
+    max-width: 35rem;
+  }
 }
 
 /* 1. Desktop styles (1200px and more) */
