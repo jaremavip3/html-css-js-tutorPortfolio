@@ -45,3 +45,44 @@ function handleClickOnCard(buttonElement, cardId) {
     ? (buttonElement.innerText = arg_text2)
     : (buttonElement.innerText = arg_text1);
 }
+
+//Observer API
+//1) Target -> element we want to observe
+//2) Threshold -> when the observer should be triggered on elemnt (0-1)
+// 1 means it will be triggered when the element is completely visible
+// 0 means it will be triggered when the element is not visible at all
+//3) rootMargin -> margin around the root element
+//4) root -> where we will be observing the target element (document by default)
+function setupFooterObserver() {
+  const options = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.9,
+  };
+  const footerContainer = document.getElementById("footerContainerId");
+  const callback = function (entries, observer) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        footerContainer.classList.remove("footer_container_apply_hide");
+        footerContainer.classList.add("footer_container_apply");
+
+        console.log("footer is visible");
+      } else {
+        footerContainer.classList.remove("footer_container_apply");
+        footerContainer.classList.add("footer_container_apply_hide");
+
+        console.log("footer is not visible");
+      }
+    });
+  };
+
+  const observer = new IntersectionObserver(callback, options);
+  return observer;
+}
+// Call it when the document is ready
+document.addEventListener("DOMContentLoaded", () => {
+  const observer = setupFooterObserver();
+  const footer = document.getElementById("footerId");
+
+  observer.observe(footer);
+});
