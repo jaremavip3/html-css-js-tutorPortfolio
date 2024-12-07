@@ -208,6 +208,7 @@ body {
   margin-bottom: 1rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   background: none;
+  appearance: none;
 }
 .hero_description_buttons_dowload:hover,
 .hero_description_buttons_info:hover {
