@@ -341,6 +341,9 @@ body {
 
 /* ---------------start---------------------------------------- */
 /* Prices sections styles */
+#prices {
+  margin-bottom: 4rem;
+}
 .prices_introduction {
   color: #555555;
   text-align: center;

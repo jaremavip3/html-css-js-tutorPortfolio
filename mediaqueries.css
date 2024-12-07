@@ -52,6 +52,10 @@
   :root {
     --footer-height: 26dvh;
   }
+  #contact {
+    max-width: 35rem;
+    margin: auto;
+  }
 }
 
 /* 1. Desktop styles (1200px and more) */
