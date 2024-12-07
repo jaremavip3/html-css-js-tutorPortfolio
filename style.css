@@ -85,6 +85,7 @@ body {
   height: calc(100vh - 17vh);
   left: 0;
   width: 0;
+  pointer-events: none;
 }
 .navigation_container_list_container_toggle {
   opacity: 1;
@@ -110,7 +111,7 @@ body {
   cursor: pointer;
   align-self: center;
   justify-self: center;
-  position: relative;
+
   padding: 10px 30px;
   color: #212427;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -453,6 +454,38 @@ body {
   font-size: 0.9rem;
   color: #555555;
   text-align: left;
+}
+/* _______________end__________________________________________ */
+
+/* ---------------start---------------------------------------- */
+/* Reviews  */
+.reviews_slider {
+  width: 100%;
+  max-width: 300px;
+  margin-inline: auto;
+  overflow: hidden;
+}
+.reviews_sliver_container {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+.reviews_feedback {
+  flex: 0 0 100%;
+  padding: 1.25rem;
+  min-height: 200px;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-radius: 2rem;
+}
+.reviews_feedback_content {
+  background: #f0f0f0;
+  text-align: center;
+}
+.reviews_buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 /* _______________end__________________________________________ */
 

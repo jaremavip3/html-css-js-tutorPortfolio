@@ -88,3 +88,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   observer.observe(footer);
 });
+
+// //slider logic
+// let slideIndex = 0;
+// let slidesLenght = 5;
+// let currentSlide = 0;
+// const slides = document.getElementById("sliderId").children;
+// const nextButton = document.getElementById("review_next");
+// const prevButton = document.getElementById("review_prev");
+
+// function nextSlide() {
+//   slides.item;
+// }
