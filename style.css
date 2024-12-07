@@ -1,6 +1,10 @@
 /* My main CSS for website */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+:root {
+  --footer-height: 40dvh;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -449,9 +453,102 @@ body {
 /* ---------------start---------------------------------------- */
 /* contact  */
 .contact {
-  height: 40dvh;
-  background-color: antiquewhite;
+  height: auto;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-radius: 2rem;
+  font-size: 1rem;
 }
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.contact input,
+select,
+option,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  padding: 1rem;
+  width: 80%;
+}
+.select_area {
+  background: white;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.contact_description {
+  color: #555555;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-wrap: pretty;
+}
+.contact_title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+.contact input,
+.contact textarea {
+  border-bottom: rgb(53, 53, 53) 0.1rem solid;
+  transition: all 0.5s ease;
+}
+.contact input:focus,
+.contact textarea:focus {
+  outline: rgb(53, 53, 53) 0.1rem solid;
+
+  border-radius: 2rem;
+}
+.select_button {
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  background: none;
+  appearance: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.select_button:hover {
+  background-color: rgb(53, 53, 53);
+  color: white;
+}
+/* EMAIL SENDING STYLES */
+.message {
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.success-message {
+  background-color: #dff0d8;
+  color: #3c763d;
+  border: 1px solid #d6e9c6;
+}
+
+.error-message {
+  background-color: #f2dede;
+  color: #a94442;
+  border: 1px solid #ebccd1;
+}
+
+.select_button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+/* END */
 /* _______________end__________________________________________ */
 
 /* ---------------start---------------------------------------- */
@@ -459,10 +556,12 @@ body {
 
 .footer {
   overflow: hidden;
-  min-height: 40dvh;
+  min-height: var(--footer-height);
+  pointer-events: none;
 }
 
 .footer_container_apply {
+  pointer-events: auto;
   animation: slideIn 600ms cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
 }
 .footer_container_apply_hide {
@@ -471,7 +570,7 @@ body {
 @keyframes slideIn {
   0% {
     opacity: 0;
-    transform: translateY(40dvh) scale(0.95);
+    transform: translateY(var(--footer-height)) scale(0.95);
   }
 
   100% {
@@ -487,7 +586,7 @@ body {
 
   100% {
     opacity: 0;
-    transform: translateY(40dvh) scale(0.95);
+    transform: translateY(var(--footer-height)) scale(0.95);
   }
 }
 .footer_menu {
@@ -500,9 +599,16 @@ body {
   gap: 1rem;
   list-style: none;
   margin-bottom: 2rem;
+  padding: 0;
+}
+
+.footer_menu a {
+  text-decoration: none;
+  color: #212427;
 }
 .footer_annotation {
   margin-bottom: 1rem;
+  text-align: center;
 }
 .footer_annotation h3 {
   text-align: center;

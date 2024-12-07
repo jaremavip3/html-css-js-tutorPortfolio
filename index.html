@@ -10,7 +10,11 @@
   </head>
   <body>
     <script src="script.js"></script>
-
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript" src="email_script.js" defer></script>
     <!------ NAVIGATION Section ------>
     <nav class="navigation">
       <div class="navigation_name">Michael's English Lab</div>
@@ -536,17 +540,47 @@
         </article>
       </div>
     </section>
-    <section class="section contact">
-      <div>Cotact me</div>
+    <section class="section contact" id="contact">
+      <p class="contact_description">Have some questions?</p>
+      <div class="contact_title">Contact me</div>
+      <form class="contact_form" id="contact-form">
+        <input placeholder="Name" type="text" name="user_name" required />
+        <input placeholder="Email" type="email" name="user_email" required />
+
+        <label class="select_label" for="select-choice"
+          >What are interested in ?</label
+        >
+        <select
+          required
+          class="select_area"
+          name="selected_service"
+          id="select-choice"
+        >
+          <option value="" disabled selected>Select option</option>
+          <option value="General English">General English</option>
+          <option value="Conversational English">Conversational English</option>
+          <option value="Exam Preparation">Exam Preparation</option>
+          <option value="Business English">Business English</option>
+          <option value="Editing Research Papers">
+            Editing Research Papers
+          </option>
+        </select>
+        <textarea
+          class="select_textarea"
+          name="message"
+          placeholder="Message"
+        ></textarea>
+        <button type="submit" class="select_button">SUBMIT</button>
+      </form>
     </section>
     <footer class="footer" id="footerId">
       <div class="footer_container" id="footerContainerId">
         <ul class="footer_menu">
-          <li href="#hero">Home</li>
-          <li href="#about">About</li>
-          <li href="#skills">Skills</li>
-          <li href="#prices">Prices</li>
-          <li href="#contact">Contact</li>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#prices">Prices</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="footer_annotation">
           <h3>Copyright © 2025 Michael Gaylord. All Rights Reserved.</h3>

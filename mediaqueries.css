@@ -44,6 +44,14 @@
   .prices_container_article {
     max-width: 35rem;
   }
+  .footer_menu {
+    flex-direction: row;
+    min-height: 15dvh;
+    font-size: 1.5rem;
+  }
+  :root {
+    --footer-height: 26dvh;
+  }
 }
 
 /* 1. Desktop styles (1200px and more) */
