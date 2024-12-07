@@ -1,9 +1,10 @@
 let closure;
-window.onload = function () {
+
+function initializeMenu() {
   const menu = document.querySelector(".navigation_container_menu");
   const list = document.querySelector(".navigation_container_list_container");
   closure = initiateToggleMobileMenu(menu, list);
-};
+}
 function toggleMobileMenu() {
   closure();
 }
@@ -83,6 +84,7 @@ function setupFooterObserver() {
 document.addEventListener("DOMContentLoaded", () => {
   const observer = setupFooterObserver();
   const footer = document.getElementById("footerId");
+  initializeMenu();
 
   observer.observe(footer);
 });

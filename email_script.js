@@ -34,6 +34,12 @@ window.onload = function () {
           submitButton.textContent = "SUBMIT";
         });
     });
+
+  // Mobile menu initialisation
+
+  const menu = document.querySelector(".navigation_container_menu");
+  const list = document.querySelector(".navigation_container_list_container");
+  closure = initiateToggleMobileMenu(menu, list);
 };
 
 // Function to show messages
