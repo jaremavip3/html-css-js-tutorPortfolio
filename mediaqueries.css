@@ -45,6 +45,9 @@
   .prices_container_article {
     max-width: 35rem;
   }
+  .reviews_slider {
+    max-width: 35rem;
+  }
   .footer_menu {
     flex-direction: row;
     min-height: 15dvh;

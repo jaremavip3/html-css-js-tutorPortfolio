@@ -37,6 +37,10 @@
             <li onclick="handleClickOnMenuSection(this)" href="#prices">
               Prices
             </li>
+            <li onclick="handleClickOnMenuSection(this)" href="#reviews">
+              Reviews
+            </li>
+
             <li onclick="handleClickOnMenuSection(this)" href="#contact">
               Contact
             </li>
@@ -541,40 +545,73 @@
       </div>
     </section>
     <!------ Reviews Section ------>
-    <!-- <section class="reviews section" id="reviews">
+    <section class="reviews section" id="reviews">
       <p class="contact_description">What people say about me?</p>
       <div class="contact_title">Feedback</div>
-      <div class="reviews_slider">
-        <div class="reviews_sliver_container" id="sliderId">
-          <div class="reviews_feedback">
-            <div class="reviews_feedback_content">
-              <h2>Slide 1</h2>
-              <p>This is my first slide</p>
+      <div class="reviews_slider" id="sliderId">
+        <div class="reviews_feedback">
+          <div class="reviews_feedback_content">
+            <div class="reviews_feedback_content_imgContainer">
+              <img
+                src="assets/reviews_avatar_1.png"
+                alt="reviews avatar 1"
+                class="reviews_feedback_content_imgContainer_img"
+              />
             </div>
+            <h2>Slide 1</h2>
+            <p>This is my first slide</p>
           </div>
-          <div class="reviews_feedback">
-            <div class="reviews_feedback_content">
-              <h2>Slide 2</h2>
-              <p>This is my second slide</p>
+        </div>
+        <div class="reviews_feedback">
+          <div class="reviews_feedback_content">
+            <div class="reviews_feedback_content_imgContainer">
+              <img
+                src="assets/reviews_avatar_2.png"
+                alt="reviews avatar 2"
+                class="reviews_feedback_content_imgContainer_img"
+              />
             </div>
+            <h2>Slide 2</h2>
+            <p>This is my second slide</p>
           </div>
-          <div class="reviews_feedback">
-            <div class="reviews_feedback_content">
-              <h2>Slide 3</h2>
-              <p>This is my third slide</p>
+        </div>
+        <div class="reviews_feedback">
+          <div class="reviews_feedback_content">
+            <div class="reviews_feedback_content_imgContainer">
+              <img
+                src="assets/reviews_avatar_3.png"
+                alt="reviews avatar 3"
+                class="reviews_feedback_content_imgContainer_img"
+              />
             </div>
+            <h2>Slide 3</h2>
+            <p>This is my third slide</p>
           </div>
-          <div class="reviews_feedback">
-            <div class="reviews_feedback_content">
-              <h2>Slide 4</h2>
-              <p>This is my fourth slide</p>
+        </div>
+        <div class="reviews_feedback">
+          <div class="reviews_feedback_content">
+            <div class="reviews_feedback_content_imgContainer">
+              <img
+                src="assets/reviews_avatar_4.png"
+                alt="reviews avatar 4"
+                class="reviews_feedback_content_imgContainer_img"
+              />
             </div>
+            <h2>Slide 4</h2>
+            <p>This is my fourth slide</p>
           </div>
-          <div class="reviews_feedback">
-            <div class="reviews_feedback_content">
-              <h2>Slide 5</h2>
-              <p>This is my fifth slide</p>
+        </div>
+        <div class="reviews_feedback">
+          <div class="reviews_feedback_content">
+            <div class="reviews_feedback_content_imgContainer">
+              <img
+                src="assets/reviews_avatar_5.png"
+                alt="reviews avatar 5"
+                class="reviews_feedback_content_imgContainer_img"
+              />
             </div>
+            <h2>Slide 5</h2>
+            <p>This is my fifth slide</p>
           </div>
         </div>
       </div>
@@ -582,9 +619,11 @@
         <button class="select_button" id="review_next" onclick="nextSlide()">
           Next
         </button>
-        <button class="select_button" id="review_prev">Previous</button>
+        <button class="select_button" id="review_prev" onclick="prevSlide()">
+          Previous
+        </button>
       </div>
-    </section> -->
+    </section>
     <!------ Contact Section ------>
     <section class="section contact" id="contact">
       <p class="contact_description">Have some questions?</p>

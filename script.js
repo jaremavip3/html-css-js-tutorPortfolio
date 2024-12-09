@@ -84,19 +84,34 @@ function setupFooterObserver() {
 document.addEventListener("DOMContentLoaded", () => {
   const observer = setupFooterObserver();
   const footer = document.getElementById("footerId");
+
   initializeMenu();
 
   observer.observe(footer);
 });
 
-// //slider logic
-// let slideIndex = 0;
-// let slidesLenght = 5;
-// let currentSlide = 0;
-// const slides = document.getElementById("sliderId").children;
-// const nextButton = document.getElementById("review_next");
-// const prevButton = document.getElementById("review_prev");
+//slider logic
 
-// function nextSlide() {
-//   slides.item;
-// }
+let slidesLenght = 5;
+let currentSlide = 0;
+const nextButton = document.getElementById("review_next");
+const prevButton = document.getElementById("review_prev");
+
+function nextSlide() {
+  const slider = document.getElementById("sliderId");
+  currentSlide = (currentSlide + 1) % slidesLenght;
+  console.log(currentSlide);
+  slider.scrollTo({
+    left: currentSlide * slider.offsetWidth,
+    behavior: "smooth",
+  });
+}
+function prevSlide() {
+  const slider = document.getElementById("sliderId");
+  currentSlide = (currentSlide - 1 + slidesLenght) % slidesLenght;
+  console.log(currentSlide);
+  slider.scrollTo({
+    left: currentSlide * slider.offsetWidth,
+    behavior: "smooth",
+  });
+}
