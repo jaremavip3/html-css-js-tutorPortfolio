@@ -464,6 +464,7 @@ body {
   max-width: 300px;
   margin-inline: auto;
   overflow-x: scroll;
+  overflow: hidden;
   display: flex;
   gap: 1rem;
   scroll-snap-type: x mandatory;
@@ -580,6 +581,7 @@ textarea {
   appearance: none;
   cursor: pointer;
   transition: all 0.3s ease;
+  color: #212427;
 }
 .select_button:hover {
   background-color: rgb(53, 53, 53);
@@ -667,6 +669,11 @@ textarea {
   text-decoration: none;
   color: #212427;
 }
+
+.footer_menu li:hover {
+  transform: scale(1.1);
+}
+
 .footer_annotation {
   margin-bottom: 1rem;
   text-align: center;
