@@ -5,20 +5,29 @@ function initializeMenu() {
   const list = document.querySelector(".navigation_container_list_container");
   closure = initiateToggleMobileMenu(menu, list);
 }
+
 //Closure to toggle the menu
 function initiateToggleMobileMenu(menu, list) {
   let isOpen = false;
+  const handleScroll = () => {
+    if (isOpen) {
+      menu.classList.remove("navigation_container_menu_toggle");
+      list.classList.remove("navigation_container_list_container_toggle");
+      isOpen = false;
+      window.removeEventListener("scroll", handleScroll);
+    }
+  };
+
   return function () {
     if (isOpen) {
       menu.classList.remove("navigation_container_menu_toggle");
       list.classList.remove("navigation_container_list_container_toggle");
-
       isOpen = false;
     } else {
       menu.classList.add("navigation_container_menu_toggle");
       list.classList.add("navigation_container_list_container_toggle");
-
       isOpen = true;
+      window.addEventListener("scroll", handleScroll);
     }
   };
 }
