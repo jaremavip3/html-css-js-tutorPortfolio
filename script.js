@@ -1,13 +1,11 @@
+//Function to initialise closure of toggling the menu.
 let closure;
-
 function initializeMenu() {
   const menu = document.querySelector(".navigation_container_menu");
   const list = document.querySelector(".navigation_container_list_container");
   closure = initiateToggleMobileMenu(menu, list);
 }
-function toggleMobileMenu() {
-  closure();
-}
+//Closure to toggle the menu
 function initiateToggleMobileMenu(menu, list) {
   let isOpen = false;
   return function () {
@@ -24,10 +22,14 @@ function initiateToggleMobileMenu(menu, list) {
     }
   };
 }
-
+//Function to call the closure for toggling the menu.
+function toggleMobileMenu() {
+  closure();
+}
+//Function to close menu and navigate to the clicked section
 function handleClickOnMenuSection(clickedSection) {
   const goToSection = clickedSection.getAttribute("href");
-  closure();
+  toggleMobileMenu();
   location.href = goToSection;
 }
 
@@ -48,7 +50,7 @@ function handleClickOnCard(buttonElement, cardId) {
 }
 
 //Observer API
-//1) Target -> element we want to observe
+//1) Target -> element we want to observe (footer)
 //2) Threshold -> when the observer should be triggered on elemnt (0-1)
 // 1 means it will be triggered when the element is completely visible
 // 0 means it will be triggered when the element is not visible at all
@@ -66,13 +68,9 @@ function setupFooterObserver() {
       if (entry.isIntersecting) {
         footerContainer.classList.remove("footer_container_apply_hide");
         footerContainer.classList.add("footer_container_apply");
-
-        console.log("footer is visible");
       } else {
         footerContainer.classList.remove("footer_container_apply");
         footerContainer.classList.add("footer_container_apply_hide");
-
-        console.log("footer is not visible");
       }
     });
   };
@@ -84,19 +82,14 @@ function setupFooterObserver() {
 document.addEventListener("DOMContentLoaded", () => {
   const observer = setupFooterObserver();
   const footer = document.getElementById("footerId");
-
   initializeMenu();
-
   observer.observe(footer);
 });
 
 //slider logic
-
-let slidesLenght = 5;
-let currentSlide = 0;
-const nextButton = document.getElementById("review_next");
-const prevButton = document.getElementById("review_prev");
-
+let slidesLenght = 5; //Number of slides
+let currentSlide = 0; //Current slide number
+//Function to scroll to the next slide
 function nextSlide() {
   const slider = document.getElementById("sliderId");
   currentSlide = (currentSlide + 1) % slidesLenght;
@@ -106,6 +99,7 @@ function nextSlide() {
     behavior: "smooth",
   });
 }
+//Function to scroll to the previous slide
 function prevSlide() {
   const slider = document.getElementById("sliderId");
   currentSlide = (currentSlide - 1 + slidesLenght) % slidesLenght;
