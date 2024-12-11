@@ -17,31 +17,57 @@
     ></script>
     <script type="text/javascript" src="email_script.js" defer></script>
     <!------ NAVIGATION Section ------>
-    <nav class="navigation">
-      <div class="navigation_name">Michael's English Lab</div>
-      <div class="navigation_container">
-        <div onclick="toggleMobileMenu()" class="navigation_container_menu">
-          <div class="navigation_container_menu_line1"></div>
-          <div class="navigation_container_menu_line2"></div>
-          <div class="navigation_container_menu_line3"></div>
+    <nav class="nav">
+      <div class="nav__name">Michael's English Lab</div>
+      <div class="nav__container">
+        <div onclick="toggleMobileMenu()" class="nav__burger">
+          <div class="nav__burger-line nav__burger-line--top"></div>
+          <div class="nav__burger-line nav__burger-line--middle"></div>
+          <div class="nav__burger-line nav__burger-line--bottom"></div>
         </div>
-        <div class="navigation_container_list_container">
-          <ul class="navigation_container_list">
-            <li onclick="handleClickOnMenuSection(this)" href="#hero">Home</li>
-            <li onclick="handleClickOnMenuSection(this)" href="#about">
+        <div class="nav__list-container">
+          <ul class="nav__list">
+            <li
+              class="nav__list-item"
+              onclick="handleClickOnMenuSection(this)"
+              href="#hero"
+            >
+              Home
+            </li>
+            <li
+              class="nav__list-item"
+              onclick="handleClickOnMenuSection(this)"
+              href="#about"
+            >
               About
             </li>
-            <li onclick="handleClickOnMenuSection(this)" href="#skills">
+            <li
+              class="nav__list-item"
+              onclick="handleClickOnMenuSection(this)"
+              href="#skills"
+            >
               Skills
             </li>
-            <li onclick="handleClickOnMenuSection(this)" href="#prices">
+            <li
+              class="nav__list-item"
+              onclick="handleClickOnMenuSection(this)"
+              href="#prices"
+            >
               Prices
             </li>
-            <li onclick="handleClickOnMenuSection(this)" href="#reviews">
+            <li
+              class="nav__list-item"
+              onclick="handleClickOnMenuSection(this)"
+              href="#reviews"
+            >
               Reviews
             </li>
 
-            <li onclick="handleClickOnMenuSection(this)" href="#contact">
+            <li
+              class="nav__list-item"
+              onclick="handleClickOnMenuSection(this)"
+              href="#contact"
+            >
               Contact
             </li>
           </ul>
@@ -50,38 +76,42 @@
     </nav>
     <!------ HERO Section ------>
     <section class="section hero" id="hero">
-      <div class="hero_imgContainer">
-        <img src="assets/profile-pic.png" alt="author image" class="hero_img" />
+      <div class="hero__image-wrapper">
+        <img
+          src="assets/profile-pic.png"
+          alt="author image"
+          class="hero__image"
+        />
       </div>
-      <div class="hero_description">
-        <p class="hero_description_congrat">Hello, I'm</p>
-        <h2 class="hero_description_name">Michael</h2>
-        <p class="hero_description_title">English Teacher</p>
-        <div class="hero_description_buttons">
+      <div class="hero__description">
+        <p class="hero__description-greeting">Hello, I'm</p>
+        <h2 class="hero__description-name">Michael</h2>
+        <p class="hero__description-title">English Teacher</p>
+        <div class="hero__button-group">
           <button
-            class="hero_description_buttons_dowload"
-            onclick="window.open('./assets/resume-example.pdf')"
+            class="button button--large button--secondary"
+            onclick="window.open('./assets/resume_file.pdf')"
           >
-            Dowload CV
+            Download CV
           </button>
           <button
-            class="hero_description_buttons_info"
+            class="button button--large button--primary"
             onclick="location.href = './#contact'"
           >
             Contact Info
           </button>
         </div>
-        <div class="hero_description_links">
+        <div class="hero__social-icons">
           <img
             src="./assets/github.png"
             alt="github logo"
-            class="hero_description_links_imgGithub"
+            class="hero__icon--github"
             onclick="location.href= 'https://github.com/' "
           />
           <img
             src="./assets/linkedin.png"
             alt="linkedIn logo"
-            class="hero_description_links_imgLinkedIn"
+            class="hero__icon--linkedin"
             onclick="location.href= 'https://www.linkedin.com/' "
           />
         </div>
@@ -89,43 +119,47 @@
     </section>
     <!------ ABOUT Section ------>
     <section class="section about" id="about">
-      <p class="about_introduction">Get To Know Me</p>
-      <h2 class="about_title">About Me</h2>
-      <div class="about_container">
-        <div class="about_container_imgContainer">
+      <p class="about__intro">Get To Know Me</p>
+      <h2 class="about__title">About Me</h2>
+      <div class="about__container">
+        <div class="about__image-wrapper">
           <img
             src="assets/about-pic.png"
             alt="about image"
-            class="about_container_imgContainer_img"
+            class="about__image"
           />
         </div>
 
-        <div class="about_container_details">
-          <div class="about_container_details_cards">
-            <div class="about_container_details_cards_experince">
-              <div class="about_container_details_cards_experince_logo">
+        <div class="about__details">
+          <div class="about__details-cards">
+            <div class="about__card">
+              <div class="about__card--logo">
                 <img
                   src="assets/experience.png"
                   alt="experience logo"
-                  class="about_container_details_cards_experince_logo_img"
+                  class="about__card-icon"
                 />
               </div>
               <h3>Experience</h3>
-              <p>Over 17 years of teaching experience</p>
+              <p class="about__card-text">
+                Over 17 years of teaching experience
+              </p>
             </div>
-            <div class="about_container_details_cards_education">
-              <div class="about_container_details_cards_education_logo">
+            <div class="about__card">
+              <div class="about__card-logo">
                 <img
                   src="assets/education.png"
                   alt="education logo"
-                  class="about_container_details_cards_education_logo_img"
+                  class="about__card-icon"
                 />
               </div>
               <h3>Education</h3>
-              <p>B.A., English, Psychology, Fine Arts</p>
+              <p class="about__card-text">
+                B.A., English, Psychology, Fine Arts
+              </p>
             </div>
           </div>
-          <p class="about_container_details_text">
+          <p class="about__description">
             Whatever the situation, I will help you to achieve your goals.
             Having an academic background in languages and international
             studies, I can empathize with you and help you find the most
@@ -137,134 +171,129 @@
     </section>
     <!------ Experience Section ------>
     <section id="skills" class="section experience">
-      <p class="experience_introduction">Explore My</p>
-      <h2 class="experience_title">Skills</h2>
-      <div class="experience_cards">
+      <p class="experience__intro">Explore My</p>
+      <h2 class="experience__title">Skills</h2>
+      <div class="experience__card-group">
         <!------ CARD 1 ------>
-        <div class="experience_cards_one">
+        <div class="experience__card">
           <h2>Exams Prepatation</h2>
-          <div class="experience_cards_one_articles">
-            <article class="experience_cards_article">
+          <div class="experience__article-group">
+            <article class="experience__article">
               <img
                 src="./assets/checkmark.png"
                 alt="Experience icon"
-                class="experience_cards_one_icon"
+                class="experience__icon"
               />
               <div>
                 <h3>IELTS</h3>
-                <p></p>
               </div>
             </article>
-            <article class="experience_cards_article">
+            <article class="experience__article">
               <img
                 src="./assets/checkmark.png"
                 alt="Experience icon"
-                class="experience_cards_one_icon"
+                class="experience__icon"
               />
               <div>
                 <h3>TOEFL</h3>
-                <p></p>
               </div>
             </article>
-            <article class="experience_cards_article">
+            <article class="experience__article">
               <img
                 src="./assets/checkmark.png"
                 alt="Experience icon"
-                class="experience_cards_one_icon"
+                class="experience__icon"
               />
               <div>
                 <h3>Cambridge Exam</h3>
-                <p></p>
               </div>
             </article>
-            <article class="experience_cards_article">
+            <article class="experience__article">
               <img
                 src="./assets/checkmark.png"
                 alt="Experience icon"
-                class="experience_cards_one_icon"
+                class="experience__icon"
               />
               <div>
                 <h3>Business English</h3>
-                <p></p>
               </div>
             </article>
-            <article class="experience_cards_article">
+            <article class="experience__article">
               <img
                 src="./assets/checkmark.png"
                 alt="Experience icon"
-                class="experience_cards_one_icon"
+                class="experience__icon"
               />
               <div>
                 <h3>Academic Writing</h3>
-                <p></p>
               </div>
             </article>
           </div>
         </div>
         <!------ CARD 2 ------>
-        <div class="experience_cards_two">
+        <div class="experience__card">
           <h2>General English</h2>
-          <div class="experience_cards_one_articles">
-            <article class="experience_cards_article">
+          <div class="experience__article-group">
+            <article class="experience__article">
               <img
                 src="./assets/checkmark.png"
                 alt="Experience icon"
-                class="experience_cards_one_icon"
+                class="experience__icon"
               />
               <div>
                 <h3>Conversational</h3>
                 <p>Fluency</p>
               </div>
             </article>
-            <article class="experience_cards_article">
+            <article class="experience__article">
               <img
                 src="./assets/checkmark.png"
                 alt="Experience icon"
-                class="experience_cards_one_icon"
+                class="experience__icon"
               />
               <div>
                 <h3>Grammar</h3>
                 <p>Fundamentals</p>
               </div>
             </article>
-            <article class="experience_cards_article">
+            <article class="experience__article">
               <img
                 src="./assets/checkmark.png"
                 alt="Experience icon"
-                class="experience_cards_one_icon"
+                class="experience__icon"
               />
               <div>
                 <h3>Vocabulary</h3>
                 <p>Development</p>
               </div>
             </article>
-            <article class="experience_cards_article">
+            <article class="experience__article">
               <img
                 src="./assets/checkmark.png"
                 alt="Experience icon"
-                class="experience_cards_one_icon"
+                class="experience__icon"
               />
               <div>
                 <h3>Pronunciation</h3>
                 <p>Mastery</p>
               </div>
             </article>
-            <article class="experience_cards_article">
+            <article class="experience__article">
               <img
                 src="./assets/checkmark.png"
                 alt="Experience icon"
-                class="experience_cards_one_icon"
+                class="experience__icon"
               />
               <div>
                 <h3>Listening</h3>
                 <p>Comprehension</p>
               </div>
             </article>
-            <article class="experience_cards_article">
+            <article class="experience__article">
               <img
                 src="./assets/checkmark.png"
                 alt="Experience icon"
-                class="experience_cards_one_icon"
+                class="experience__icon"
               />
               <div>
                 <h3>Reading</h3>
@@ -278,34 +307,34 @@
 
     <!------ Prices Section ------>
     <section id="prices" class="section prices">
-      <p class="prices_introduction">Explore My</p>
-      <h2 class="prices_title">Prices</h2>
-      <div class="prices_container">
+      <p class="prices__intro">Explore My</p>
+      <h2 class="prices__title">Prices</h2>
+      <div class="prices__container">
         <!-- ARTICLE1 -->
-        <article class="prices_container_article">
-          <div class="prices_container_imgHolder">
-            <div class="prices_container_content" id="card1">
-              <h4 class="content_title">Course Details</h4>
-              <div class="content_details">
-                <div class="detail_row">
-                  <span class="detail_label">Length:</span>
-                  <span class="detail_value">60 minutes</span>
+        <article class="prices__article">
+          <div class="prices__image-wrapper">
+            <div class="prices__details" id="card1">
+              <h4 class="prices__details-title">Course Details</h4>
+              <div class="prices__details-content">
+                <div class="prices__row">
+                  <span class="prices__label">Length:</span>
+                  <span class="prices__value">60 minutes</span>
                 </div>
-                <div class="detail_row">
-                  <span class="detail_label">Per Lesson:</span>
-                  <span class="detail_value">$35</span>
+                <div class="prices__row">
+                  <span class="prices__label">Per Lesson:</span>
+                  <span class="prices__value">$35</span>
                 </div>
-                <div class="detail_row">
-                  <span class="detail_label">Package*:</span>
-                  <span class="detail_value">$300</span>
+                <div class="prices__row">
+                  <span class="prices__label">Package*:</span>
+                  <span class="prices__value">$300</span>
                 </div>
-                <div class="detail_row detail_row_curriculum">
+                <div class="prices__row prices__curriculum">
                   <span class="">Curriculum:</span>
-                  <span class="detail_value"> • Accuracy Enhancement </span>
-                  <span class="detail_value"
+                  <span class="prices__value"> • Accuracy Enhancement </span>
+                  <span class="prices__value"
                     >• Listening Skills Enhancement</span
                   >
-                  <span class="detail_value"
+                  <span class="prices__value"
                     >• Imrovement of Listening Skills</span
                   >
                 </div>
@@ -319,15 +348,15 @@
           </div>
 
           <h3>General English</h3>
-          <div class="prices_container_article_buttonHolder">
+          <div class="prices__button-group">
             <button
               onclick="handleClickOnCard(this, 'card1')"
-              class="prices_container_article_buttonHolder_button"
+              class="button button--small button--secondary"
             >
               Price
             </button>
             <button
-              class="prices_container_article_buttonHolder_button"
+              class="button button--small button--secondary"
               onclick="location.href = './#contact'"
             >
               Contact
@@ -335,28 +364,28 @@
           </div>
         </article>
         <!-- ARTICLE2 -->
-        <article class="prices_container_article">
-          <div class="prices_container_imgHolder">
-            <div class="prices_container_content" id="card2">
-              <h4 class="content_title">Course Details</h4>
-              <div class="content_details">
-                <div class="detail_row">
-                  <span class="detail_label">Length:</span>
-                  <span class="detail_value">60-70 minutes</span>
+        <article class="prices__article">
+          <div class="prices__image-wrapper">
+            <div class="prices__details" id="card2">
+              <h4 class="prices__details-title">Course Details</h4>
+              <div class="prices__details-content">
+                <div class="prices__row">
+                  <span class="prices__label">Length:</span>
+                  <span class="prices__value">60-70 minutes</span>
                 </div>
-                <div class="detail_row">
-                  <span class="detail_label">Per Lesson:</span>
-                  <span class="detail_value">$30</span>
+                <div class="prices__row">
+                  <span class="prices__label">Per Lesson:</span>
+                  <span class="prices__value">$30</span>
                 </div>
-                <div class="detail_row">
-                  <span class="detail_label">Package*:</span>
-                  <span class="detail_value">$250</span>
+                <div class="prices__row">
+                  <span class="prices__label">Package*:</span>
+                  <span class="prices__value">$250</span>
                 </div>
-                <div class="detail_row detail_row_curriculum">
+                <div class="prices__row prices__curriculum">
                   <span class="">Curriculum:</span>
-                  <span class="detail_value"> • Fun Discussion </span>
-                  <span class="detail_value">• Topics of Your Interest</span>
-                  <span class="detail_value">• Error Analysis & Feedback</span>
+                  <span class="prices__value"> • Fun Discussion </span>
+                  <span class="prices__value">• Topics of Your Interest</span>
+                  <span class="prices__value">• Error Analysis & Feedback</span>
                 </div>
               </div>
             </div>
@@ -365,26 +394,26 @@
               alt="price icon"
               class=""
             />
-            <div class="prices_container_content" id="card2">
-              <h4 class="content_title">Course Details</h4>
-              <div class="content_details">
-                <div class="detail_row">
-                  <span class="detail_label">Length:</span>
-                  <span class="detail_value">60 minutes</span>
+            <div class="prices__details" id="card2">
+              <h4 class="prices__details-title">Course Details</h4>
+              <div class="prices__details-content">
+                <div class="prices__row">
+                  <span class="prices__label">Length:</span>
+                  <span class="prices__value">60 minutes</span>
                 </div>
-                <div class="detail_row">
-                  <span class="detail_label">Per Lesson:</span>
-                  <span class="detail_value">$35</span>
+                <div class="prices__row">
+                  <span class="prices__label">Per Lesson:</span>
+                  <span class="prices__value">$35</span>
                 </div>
-                <div class="detail_row">
-                  <span class="detail_label">Package*:</span>
-                  <span class="detail_value">$300</span>
+                <div class="prices__row">
+                  <span class="prices__label">Package*:</span>
+                  <span class="prices__value">$300</span>
                 </div>
-                <div class="detail_row detail_row_curriculum">
+                <div class="prices__row prices__curriculum">
                   <span class="">Curriculum:</span>
-                  <span class="detail_value"> • Vocabulary Improvement </span>
-                  <span class="detail_value">• Accuracy Enhancement</span>
-                  <span class="detail_value"
+                  <span class="prices__value"> • Vocabulary Improvement </span>
+                  <span class="prices__value">• Accuracy Enhancement</span>
+                  <span class="prices__value"
                     >• Imrovement of Listening Skills</span
                   >
                 </div>
@@ -393,15 +422,15 @@
           </div>
 
           <h3>Conversational English</h3>
-          <div class="prices_container_article_buttonHolder">
+          <div class="prices__button-group">
             <button
               onclick="handleClickOnCard(this, 'card2')"
-              class="prices_container_article_buttonHolder_button"
+              class="button button--small button--secondary"
             >
               Price
             </button>
             <button
-              class="prices_container_article_buttonHolder_button"
+              class="button button--small button--secondary"
               onclick="location.href = './#contact'"
             >
               Contact
@@ -409,26 +438,26 @@
           </div>
         </article>
         <!-- ARTICLE3 -->
-        <article class="prices_container_article">
-          <div class="prices_container_imgHolder">
-            <div class="prices_container_content" id="card3">
-              <h4 class="content_title">Course Details</h4>
-              <div class="content_details">
-                <div class="detail_row">
-                  <span class="detail_label">Length:</span>
-                  <span class="detail_value">75 minutes</span>
+        <article class="prices__article">
+          <div class="prices__image-wrapper">
+            <div class="prices__details" id="card3">
+              <h4 class="prices__details-title">Course Details</h4>
+              <div class="prices__details-content">
+                <div class="prices__row">
+                  <span class="prices__label">Length:</span>
+                  <span class="prices__value">75 minutes</span>
                 </div>
-                <div class="detail_row">
-                  <span class="detail_label">Per Lesson:</span>
-                  <span class="detail_value">$40</span>
+                <div class="prices__row">
+                  <span class="prices__label">Per Lesson:</span>
+                  <span class="prices__value">$40</span>
                 </div>
-                <div class="detail_row">
-                  <span class="detail_label">Package*:</span>
-                  <span class="detail_value">$350</span>
+                <div class="prices__row">
+                  <span class="prices__label">Package*:</span>
+                  <span class="prices__value">$350</span>
                 </div>
-                <div class="detail_row detail_row_curriculum">
+                <div class="prices__row prices__curriculum">
                   <span class="">Curriculum:</span>
-                  <span class="detail_value">
+                  <span class="prices__value">
                     Thorough preparation to assist you as you study for the
                     IELTS or Celpip exams.</span
                   >
@@ -438,15 +467,15 @@
             <img src="./assets/prices_exams.png" alt="price icon" class="" />
           </div>
           <h3>Exam Preparation</h3>
-          <div class="prices_container_article_buttonHolder">
+          <div class="prices__button-group">
             <button
               onclick="handleClickOnCard(this, 'card3')"
-              class="prices_container_article_buttonHolder_button"
+              class="button button--small button--secondary"
             >
               Price
             </button>
             <button
-              class="prices_container_article_buttonHolder_button"
+              class="button button--small button--secondary"
               onclick="location.href = './#contact'"
             >
               Contact
@@ -454,28 +483,28 @@
           </div>
         </article>
         <!-- ARTICLE4 -->
-        <article class="prices_container_article">
-          <div class="prices_container_imgHolder">
-            <div class="prices_container_content" id="card4">
-              <h4 class="content_title">Course Details</h4>
-              <div class="content_details">
-                <div class="detail_row">
-                  <span class="detail_label">Length:</span>
-                  <span class="detail_value">90 min</span>
+        <article class="prices__article">
+          <div class="prices__image-wrapper">
+            <div class="prices__details" id="card4">
+              <h4 class="prices__details-title">Course Details</h4>
+              <div class="prices__details-content">
+                <div class="prices__row">
+                  <span class="prices__label">Length:</span>
+                  <span class="prices__value">90 min</span>
                 </div>
-                <div class="detail_row">
-                  <span class="detail_label">Per Lesson:</span>
-                  <span class="detail_value">$50</span>
+                <div class="prices__row">
+                  <span class="prices__label">Per Lesson:</span>
+                  <span class="prices__value">$50</span>
                 </div>
-                <div class="detail_row">
-                  <span class="detail_label">Package:</span>
-                  <span class="detail_value">$400</span>
+                <div class="prices__row">
+                  <span class="prices__label">Package:</span>
+                  <span class="prices__value">$400</span>
                 </div>
-                <div class="detail_row detail_row_curriculum">
+                <div class="prices__row prices__curriculum">
                   <span class="">Curriculum:</span>
-                  <span class="detail_value">• Vocabulary Improvement </span>
-                  <span class="detail_value">• Accuracy Improvement</span>
-                  <span class="detail_value"
+                  <span class="prices__value">• Vocabulary Improvement </span>
+                  <span class="prices__value">• Accuracy Improvement</span>
+                  <span class="prices__value"
                     >• Listening skills Improvement</span
                   >
                 </div>
@@ -488,15 +517,15 @@
             />
           </div>
           <h3>Business English</h3>
-          <div class="prices_container_article_buttonHolder">
+          <div class="prices__button-group">
             <button
               onclick="handleClickOnCard(this, 'card4')"
-              class="prices_container_article_buttonHolder_button"
+              class="button button--small button--secondary"
             >
               Price
             </button>
             <button
-              class="prices_container_article_buttonHolder_button"
+              class="button button--small button--secondary"
               onclick="location.href = './#contact'"
             >
               Contact
@@ -504,31 +533,31 @@
           </div>
         </article>
         <!-- ARTICLE5 -->
-        <article class="prices_container_article">
-          <div class="prices_container_imgHolder">
-            <div class="prices_container_content" id="card5">
-              <h4 class="content_title">Course Details</h4>
-              <div class="content_details">
-                <div class="detail_row">
-                  <span class="detail_label">Length:</span>
-                  <span class="detail_value"
+        <article class="prices__article">
+          <div class="prices__image-wrapper">
+            <div class="prices__details" id="card5">
+              <h4 class="prices__details-title">Course Details</h4>
+              <div class="prices__details-content">
+                <div class="prices__row">
+                  <span class="prices__label">Length:</span>
+                  <span class="prices__value"
                     >Depends on the number of pages</span
                   >
                 </div>
-                <div class="detail_row">
-                  <span class="detail_label">Cost:</span>
-                  <span class="detail_value">$3 / page</span>
+                <div class="prices__row">
+                  <span class="prices__label">Cost:</span>
+                  <span class="prices__value">$3 / page</span>
                 </div>
-                <div class="detail_row">
-                  <span class="detail_label">Package:</span>
-                  <span class="detail_value">N/A</span>
+                <div class="prices__row">
+                  <span class="prices__label">Package:</span>
+                  <span class="prices__value">N/A</span>
                 </div>
-                <div class="detail_row detail_row_curriculum">
+                <div class="prices__row prices__curriculum">
                   <span class="">Curriculum:</span>
-                  <span class="detail_value">
+                  <span class="prices__value">
                     • Thorough proofreading and editing
                   </span>
-                  <span class="detail_value"
+                  <span class="prices__value"
                     >• Content assessment and advice</span
                   >
                 </div>
@@ -542,15 +571,15 @@
             />
           </div>
           <h3>Editing Research Papers</h3>
-          <div class="prices_container_article_buttonHolder">
+          <div class="prices__button-group">
             <button
               onclick="handleClickOnCard(this, 'card5')"
-              class="prices_container_article_buttonHolder_button"
+              class="button button--small button--secondary"
             >
               Price
             </button>
             <button
-              class="prices_container_article_buttonHolder_button"
+              class="button button--small button--secondary"
               onclick="location.href = './#contact'"
             >
               Contact
@@ -561,68 +590,68 @@
     </section>
     <!------ Reviews Section ------>
     <section class="reviews section" id="reviews">
-      <p class="contact_description">What people say about me?</p>
-      <div class="contact_title">Feedback</div>
-      <div class="reviews_slider" id="sliderId">
-        <div class="reviews_feedback">
-          <div class="reviews_feedback_content">
-            <div class="reviews_feedback_content_imgContainer">
+      <p class="reviews__description">What people say about me?</p>
+      <div class="reviews__title">Feedback</div>
+      <div class="reviews__slider" id="sliderId">
+        <div class="reviews__card">
+          <div class="reviews__card-content">
+            <div class="reviews__image-wrapper">
               <img
                 src="assets/reviews_avatar_1.png"
                 alt="reviews avatar 1"
-                class="reviews_feedback_content_imgContainer_img"
+                class="reviews__image"
               />
             </div>
             <h2>Slide 1</h2>
             <p>This is my first slide</p>
           </div>
         </div>
-        <div class="reviews_feedback">
-          <div class="reviews_feedback_content">
-            <div class="reviews_feedback_content_imgContainer">
+        <div class="reviews__card">
+          <div class="reviews__card-content">
+            <div class="reviews__image-wrapper">
               <img
                 src="assets/reviews_avatar_2.png"
                 alt="reviews avatar 2"
-                class="reviews_feedback_content_imgContainer_img"
+                class="reviews__image"
               />
             </div>
             <h2>Slide 2</h2>
             <p>This is my second slide</p>
           </div>
         </div>
-        <div class="reviews_feedback">
-          <div class="reviews_feedback_content">
-            <div class="reviews_feedback_content_imgContainer">
+        <div class="reviews__card">
+          <div class="reviews__card-content">
+            <div class="reviews__image-wrapper">
               <img
                 src="assets/reviews_avatar_3.png"
                 alt="reviews avatar 3"
-                class="reviews_feedback_content_imgContainer_img"
+                class="reviews__image"
               />
             </div>
             <h2>Slide 3</h2>
             <p>This is my third slide</p>
           </div>
         </div>
-        <div class="reviews_feedback">
-          <div class="reviews_feedback_content">
-            <div class="reviews_feedback_content_imgContainer">
+        <div class="reviews__card">
+          <div class="reviews__card-content">
+            <div class="reviews__image-wrapper">
               <img
                 src="assets/reviews_avatar_4.png"
                 alt="reviews avatar 4"
-                class="reviews_feedback_content_imgContainer_img"
+                class="reviews__image"
               />
             </div>
             <h2>Slide 4</h2>
             <p>This is my fourth slide</p>
           </div>
         </div>
-        <div class="reviews_feedback">
-          <div class="reviews_feedback_content">
-            <div class="reviews_feedback_content_imgContainer">
+        <div class="reviews__card">
+          <div class="reviews__card-content">
+            <div class="reviews__image-wrapper">
               <img
                 src="assets/reviews_avatar_5.png"
                 alt="reviews avatar 5"
-                class="reviews_feedback_content_imgContainer_img"
+                class="reviews__image"
               />
             </div>
             <h2>Slide 5</h2>
@@ -630,29 +659,49 @@
           </div>
         </div>
       </div>
-      <div class="reviews_buttons">
-        <button class="select_button" id="review_next" onclick="nextSlide()">
+      <div class="reviews__button-group">
+        <button
+          class="button button--large button--secondary"
+          id="review_next"
+          onclick="nextSlide()"
+        >
           Next
         </button>
-        <button class="select_button" id="review_prev" onclick="prevSlide()">
+        <button
+          class="button button--large button--secondary"
+          id="review_prev"
+          onclick="prevSlide()"
+        >
           Previous
         </button>
       </div>
     </section>
     <!------ Contact Section ------>
     <section class="section contact" id="contact">
-      <p class="contact_description">Have some questions?</p>
-      <div class="contact_title">Contact me</div>
-      <form class="contact_form" id="contact-form">
-        <input placeholder="Name" type="text" name="from_name" required />
-        <input placeholder="Email" type="email" name="from_email" required />
+      <p class="reviews__description">Have some questions?</p>
+      <div class="reviews__title">Contact me</div>
+      <form class="contact__form" id="contact-form">
+        <input
+          class="contact__input"
+          placeholder="Name"
+          type="text"
+          name="from_name"
+          required
+        />
+        <input
+          class="contact__input"
+          placeholder="Email"
+          type="email"
+          name="from_email"
+          required
+        />
 
         <label class="select_label" for="select-choice"
           >What are interested in ?</label
         >
         <select
           required
-          class="select_area"
+          class="contact__input-select"
           name="selected_service"
           id="select-choice"
         >
@@ -666,24 +715,30 @@
           </option>
         </select>
         <textarea
-          class="select_textarea"
+          class="contact__input-textarea"
           name="message"
           placeholder="Message"
         ></textarea>
-        <button type="submit" class="select_button">SUBMIT</button>
+        <button
+          id="submitBtn"
+          type="submit"
+          class="button button--large button--secondary"
+        >
+          SUBMIT
+        </button>
       </form>
     </section>
     <!------ Footer Section ------>
     <footer class="footer" id="footerId">
-      <div class="footer_container" id="footerContainerId">
-        <ul class="footer_menu">
+      <div class="footer__container" id="footerContainerId">
+        <ul class="footer__menu">
           <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#prices">Prices</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <div class="footer_annotation">
+        <div class="footer__annotation">
           <h3>Copyright © 2025 Michael Gaylord. All Rights Reserved.</h3>
         </div>
       </div>

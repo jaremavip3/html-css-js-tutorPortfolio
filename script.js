@@ -1,8 +1,8 @@
 //Function to initialise closure of toggling the menu.
 let closure;
 function initializeMenu() {
-  const menu = document.querySelector(".navigation_container_menu");
-  const list = document.querySelector(".navigation_container_list_container");
+  const menu = document.querySelector(".nav__burger");
+  const list = document.querySelector(".nav__list-container");
   closure = initiateToggleMobileMenu(menu, list);
 }
 
@@ -11,8 +11,8 @@ function initiateToggleMobileMenu(menu, list) {
   let isOpen = false;
   const handleScroll = () => {
     if (isOpen) {
-      menu.classList.remove("navigation_container_menu_toggle");
-      list.classList.remove("navigation_container_list_container_toggle");
+      menu.classList.remove("nav__burger--open");
+      list.classList.remove("nav__list-container--open");
       isOpen = false;
       window.removeEventListener("scroll", handleScroll);
     }
@@ -20,12 +20,12 @@ function initiateToggleMobileMenu(menu, list) {
 
   return function () {
     if (isOpen) {
-      menu.classList.remove("navigation_container_menu_toggle");
-      list.classList.remove("navigation_container_list_container_toggle");
+      menu.classList.remove("nav__burger--open");
+      list.classList.remove("nav__list-container--open");
       isOpen = false;
     } else {
-      menu.classList.add("navigation_container_menu_toggle");
-      list.classList.add("navigation_container_list_container_toggle");
+      menu.classList.add("nav__burger--open");
+      list.classList.add("nav__list-container--open");
       isOpen = true;
       window.addEventListener("scroll", handleScroll);
     }
@@ -50,8 +50,8 @@ function handleClickOnCard(buttonElement, cardId) {
   const card = document.getElementById(cardId);
   //Depending on the inner text of the button, I add or remove the class of the card
   buttonElement.innerText == arg_text1
-    ? card.classList.add("prices_container_content_onClick")
-    : card.classList.remove("prices_container_content_onClick");
+    ? card.classList.add("prices__details--active")
+    : card.classList.remove("prices__details--active");
   //Depending on the inner text of the button, I change the text of the button
   buttonElement.innerText == arg_text1
     ? (buttonElement.innerText = arg_text2)
@@ -75,11 +75,11 @@ function setupFooterObserver() {
   const callback = function (entries, observer) {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        footerContainer.classList.remove("footer_container_apply_hide");
-        footerContainer.classList.add("footer_container_apply");
+        footerContainer.classList.remove("footer__container--hide");
+        footerContainer.classList.add("footer__container--active");
       } else {
-        footerContainer.classList.remove("footer_container_apply");
-        footerContainer.classList.add("footer_container_apply_hide");
+        footerContainer.classList.remove("footer__container--active");
+        footerContainer.classList.add("footer__container--hide");
       }
     });
   };

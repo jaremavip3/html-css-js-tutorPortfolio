@@ -13,7 +13,7 @@ window.onload = function () {
       event.preventDefault();
 
       // Add loading state to button
-      const submitButton = this.querySelector(".select_button");
+      const submitButton = document.getElementById("submitBtn");
       submitButton.disabled = true;
       submitButton.textContent = "Sending...";
 

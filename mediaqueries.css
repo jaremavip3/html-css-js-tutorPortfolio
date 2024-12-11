@@ -2,20 +2,20 @@
 
 /* 1. Tablet styles (600px and more) */
 @media screen and (min-width: 600px) {
-  .navigation_container_menu {
+  .nav__burger {
     height: 32px;
   }
-  .navigation_container_menu div {
+  .nav__burger div {
     width: 40px;
     height: 4px;
   }
-  .navigation_container_menu_toggle div:nth-child(1) {
+  .nav__burger--open div:nth-child(1) {
     transform: translateY(14px) rotate(45deg);
   }
-  .navigation_container_menu_toggle div:nth-child(3) {
+  .nav__burger--open div:nth-child(3) {
     transform: translateY(-14px) rotate(-45deg);
   }
-  .navigation_container_list {
+  .nav__list {
     width: 100%;
   }
 
@@ -24,31 +24,31 @@
     gap: 0;
     padding: 0;
   }
-  .hero_imgContainer,
-  .about_container_imgContainer {
+  .hero__image-wrapper,
+  .about__image-wrapper {
     width: 275px;
     height: 275px;
     margin: 0 auto 2rem;
   }
-  .hero_description_name {
+  .hero__description-name {
     font-size: 3rem;
   }
-  .hero_description_title {
+  .hero__description-title {
     font-size: 1.75rem;
   }
-  .about_title {
+  .about__title {
     font-size: 3rem;
   }
-  .prices_container h3 {
+  .prices__container h3 {
     font-size: 1.25rem;
   }
-  .prices_container_article {
+  .prices__article {
     max-width: 35rem;
   }
-  .reviews_slider {
+  .reviews__slider {
     max-width: 35rem;
   }
-  .footer_menu {
+  .footer__menu {
     flex-direction: row;
     min-height: 15dvh;
     font-size: 1.5rem;
@@ -71,7 +71,7 @@
     font-size: 2rem;
   }
   /* Make the list horizontal instead of vertical */
-  .navigation_container_list {
+  .nav__list {
     display: flex;
     flex-direction: row;
     /* removing padding for proper desktop nav bar aligment */
@@ -83,7 +83,7 @@
   }
   /* resetting some settings for desktop nav bar animation */
   /* I tried to make it responsive without new DIV and for this I need to reset some properties */
-  .navigation_container_list_container {
+  .nav__list-container {
     position: static;
     top: auto;
     left: auto;
@@ -94,7 +94,7 @@
   }
 
   /* Not to show X button */
-  .navigation_container_menu {
+  .nav__burger {
     display: none;
   }
   .hero {
@@ -102,19 +102,19 @@
     flex-direction: row;
     gap: 4rem;
   }
-  .hero_imgContainer,
-  .about_container_imgContainer {
+  .hero__image-wrapper,
+  .about__image-wrapper {
     width: 400px;
     height: 400px;
     margin: auto 0;
   }
-  .about_container {
+  .about__container {
     display: flex;
     flex-direction: row;
     gap: 5rem;
   }
-  .hero_img,
-  .about_container_imgContainer_img {
+  .hero__image,
+  .about__image {
     max-width: none;
   }
 }
