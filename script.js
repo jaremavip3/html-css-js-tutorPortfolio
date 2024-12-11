@@ -41,7 +41,6 @@ function handleClickOnMenuSection(clickedSection) {
   toggleMobileMenu();
   location.href = goToSection;
 }
-
 //Function to handle the click on the card
 //____I use it to add styles to the card elements onClick____
 function handleClickOnCard(buttonElement, cardId) {
