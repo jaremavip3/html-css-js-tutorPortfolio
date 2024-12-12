@@ -578,7 +578,6 @@ textarea {
   border-radius: 2rem;
   cursor: pointer;
   font-family: inherit;
-
   outline-color: rgb(53, 53, 53);
   color: #212427;
 }
@@ -595,6 +594,7 @@ textarea {
   text-align: center;
 }
 input.contact__input {
+  overflow: hidden;
   border-bottom: 1px solid;
   transition: all 0.5s ease;
 }
