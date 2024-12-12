@@ -22,6 +22,7 @@ function initiateToggleMobileMenu(menu, list) {
     if (isOpen) {
       menu.classList.remove("nav__burger--open");
       list.classList.remove("nav__list-container--open");
+      
       isOpen = false;
     } else {
       menu.classList.add("nav__burger--open");

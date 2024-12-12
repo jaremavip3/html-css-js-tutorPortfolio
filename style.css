@@ -21,7 +21,6 @@ body {
   background: none;
   cursor: pointer;
   position: relative;
-  z-index: 5;
 }
 /* Creating the glowing border effect using a pseudo-element */
 .button::before {
@@ -36,7 +35,7 @@ body {
   background-size: 500% 500%;
   opacity: 0;
   transition: opacity 0.3s ease;
-  z-index: -1;
+
   /* Create the border effect by masking the middle */
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
@@ -179,6 +178,7 @@ body {
   left: 0;
   width: 0;
   pointer-events: none;
+  z-index: 10;
 }
 .nav__list-container--open {
   opacity: 1;
