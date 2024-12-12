@@ -578,7 +578,8 @@ textarea {
   border-radius: 2rem;
   cursor: pointer;
   font-family: inherit;
-  outline-color: linear-gradient(80deg, #ff5722, #ffc107, #ff4081, #673ab7);
+
+  outline-color: rgb(53, 53, 53);
   color: #212427;
 }
 .reviews__description {
