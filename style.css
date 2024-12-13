@@ -244,6 +244,8 @@ body {
 
 .hero__image {
   max-width: none;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
 }
 
 .hero__description {

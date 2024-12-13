@@ -30,6 +30,9 @@
     height: 275px;
     margin: 0 auto 2rem;
   }
+  .hero__image {
+    margin-bottom: 0;
+  }
   .hero__description-name {
     font-size: 3rem;
   }
