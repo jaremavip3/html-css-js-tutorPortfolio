@@ -594,9 +594,6 @@ textarea {
   text-align: center;
 }
 input.contact__input {
-  border-top: none;
-  border-left: none;
-  border-right: none;
   border-bottom: 1px solid;
   transition: all 0.5s ease;
 }
@@ -606,8 +603,9 @@ input.contact__input {
 }
 .contact__input:focus,
 .contact__input-textarea:focus {
-  outline: rgb(53, 53, 53) 0.1rem solid;
+  border: rgb(53, 53, 53) 0.1rem solid;
   border-radius: 2rem;
+  outline-color: rgb(53, 53, 53);
 }
 /* EMAIL SENDING STYLES */
 .message {
